@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="@dimen/main_dim_btn"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/btnLogin"
+            android:layout_alignRight="@+id/btnLogin"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/main_login_button"
+            android:text="@string/main_btn_register" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="63dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/logotext" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/textfield_background"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_password"
+            android:layout_alignRight="@+id/txt_password"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/textfield_background"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/style_login_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/main_login_button"
+            android:text="@string/main_btn_login" />
+    </RelativeLayout>
+
+</ScrollView>

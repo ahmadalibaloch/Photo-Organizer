@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/imgBtn_back"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.06"
+        android:background="@drawable/title_buttons"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_icon"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.02"
+        android:background="@drawable/title_buttons"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logobtn" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1.03"
+        android:background="#2a75bf" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="#ccc" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_menu"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/title_buttons"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/menu" />
+
+</LinearLayout>

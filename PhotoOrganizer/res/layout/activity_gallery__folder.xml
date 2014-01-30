@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background" >
+
+    <fragment
+        android:id="@+id/fr_acitvity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="fragment.Fragment_ActivityTitle"
+        tools:layout="@layout/fragment_title" />
+
+    <TextView
+        android:id="@+id/txt_gallery_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fr_acitvity_title"
+        android:ems="10" >
+
+        <requestFocus />
+    </TextView>
+
+    <ListView
+        android:id="@+id/lst_gallery_folders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_gallery_addFolder"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_gallery_path" >
+    </ListView>
+
+    <!--
+    empty view
+
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty List,Click to add items" >
+        </Button>
+    </LinearLayout>
+    -->
+
+    <Button
+        android:id="@+id/btn_gallery_setPath"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="59dp"
+         android:background="@drawable/main_login_button"
+        android:text="Select" />
+
+    <Button
+        android:id="@+id/btn_gallery_addFolder"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/btn_gallery_setPath"
+        android:background="@drawable/main_login_button"
+        android:text="Add Gallery" />
+
+</RelativeLayout>

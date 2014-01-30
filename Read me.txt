@@ -1,0 +1,13 @@
+this is a complete application with requirements mentioned fully working and more....cheers
+
+
+
+the gallery delete option works by long clicking any gallery..that is familiar android experience...
+
+user can also location pictures on map by selecting them from list when map is showed.
+
+thanks
+
+Ahmad Ali
+09032287
+12:53 PM 1/2/2013

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Settings" >
+
+        <fragment
+            android:id="@+id/fr_acitvity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            class="fragment.Fragment_ActivityTitle"
+            tools:layout="@layout/fragment_title" />
+    
+    <Button
+        android:id="@+id/btn_setting_deletePhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:text="Delete All Invalid Photos" />
+
+    <Button
+        android:id="@+id/btn_settings_deletePlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_setting_deletePhotos"
+        android:layout_below="@+id/btn_setting_deletePhotos"
+        android:layout_marginTop="29dp"
+        android:text="Delete All Invalid Places" />
+
+    <Button
+        android:id="@+id/btn_settings_backup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_settings_deletePlaces"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Backup Database" />
+
+</RelativeLayout>

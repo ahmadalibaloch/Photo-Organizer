@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".PhotoSearch" >
+
+    <fragment
+        android:id="@+id/fr_acitvity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="fragment.Fragment_ActivityTitle"
+        tools:layout="@layout/fragment_title" />
+    <GridView
+        android:id="@+id/grd_search_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_search_search"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" >
+
+    </GridView>
+
+    <EditText
+        android:id="@+id/txt_search_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fr_acitvity_title"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/btn_search_search"
+        android:ems="10"
+        android:hint="enter tags, names, places"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btn_search_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txt_search_search"
+        android:src="@drawable/search" />
+
+</RelativeLayout>

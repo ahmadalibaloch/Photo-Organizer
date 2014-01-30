@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Register" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="439dp" >
+
+        <EditText
+            android:id="@+id/txt_register_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tr1"
+            android:layout_alignBottom="@+id/tr1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/tr1"
+            android:ems="10"
+            android:scrollHorizontally="true"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_register_name"
+            android:layout_marginTop="33dp"
+            android:layout_toLeftOf="@+id/txt_register_name"
+            android:text="Password :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/txt_register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tr2"
+            android:layout_alignBottom="@+id/tr2"
+            android:layout_alignLeft="@+id/txt_register_name"
+            android:layout_alignRight="@+id/txt_register_name"
+            android:ems="10"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:text="Register"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="68dp"
+            android:text="Username :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_register_register"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_register_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/main_login_button"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/btn_register_cancel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_register_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/main_login_button"
+            android:text="Cancel" />
+    </RelativeLayout>
+
+</ScrollView>

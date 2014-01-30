@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/txt_place_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_place_lon"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_place_name"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:scrollHorizontally="true"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_place_lat"
+        android:layout_alignBottom="@+id/txt_place_lat"
+        android:layout_alignParentLeft="false"
+        android:layout_alignRight="@+id/tv3"
+        android:text="Latitude :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txt_place_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_place_lat"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/tv3"
+        android:ems="10"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_place_map"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_place_select"
+        android:layout_alignBottom="@+id/btn_place_select"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/btn_place_select"
+        android:text="Show Map" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_place_name"
+        android:layout_alignBottom="@+id/txt_place_name"
+        android:layout_alignRight="@+id/tv2"
+        android:text="Place :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_place_lon"
+        android:layout_alignBottom="@+id/txt_place_lon"
+        android:layout_alignParentLeft="true"
+        android:text="Longitude :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_place_select"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_below="@+id/txt_place_lon"
+        android:layout_marginTop="36dp"
+        android:text="Select" />
+
+    <Spinner
+        android:id="@+id/sp_place_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_place_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txt_place_name"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:id="@+id/txt_place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_place_list"
+        android:layout_toRightOf="@+id/tv1"
+        android:ems="10"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_place_list"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@+id/sp_place_list"
+        android:text="Recent :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

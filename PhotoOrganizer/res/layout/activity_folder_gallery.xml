@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".FolderGallery" >
+
+    <fragment
+        android:id="@+id/fr_acitvity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="fragment.Fragment_ActivityTitle"
+        tools:layout="@layout/fragment_title" />
+
+    <Gallery
+        android:id="@+id/galleryFolder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fr_acitvity_title" />
+
+</RelativeLayout>
